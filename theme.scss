@@ -1,0 +1,16 @@
+@import './components/banner/banner';
+
+.nx-mx-auto.nx-flex:not(.nextra-nav-container) {
+  max-width: 100%;
+}
+
+article {
+  @media (min-width: 697px) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+:is([dir=ltr] .ltr\:nx-text-right) {
+  display: none;
+}

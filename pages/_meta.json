@@ -1,15 +1,44 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
+  "index": {
+    "title": "Home",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "pagination": false,
+      "layout": "full"
+    }
+  },
+ "about": {
     "title": "About",
-    "type": "page"
+    "type": "page",
+    "theme": {
+      "pagination": false,
+      "layout": "full"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "pagination": false,
+      "layout": "full"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "type": "page",
+    "theme": {
+      "pagination": false,
+      "layout": "full"
+    }
   },
   "contact": {
-    "title": "Contact ↗",
+    "title": "Contact",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
+    "theme": {
+      "pagination": false,
+      "layout": "full"
+    }
   }
 }

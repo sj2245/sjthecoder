@@ -1,0 +1,26 @@
+.banner {
+  display: flex;
+  color: white;
+  font-size: 100px;
+  position: relative;
+  text-align: center;
+  background: black;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #242424;
+
+  .bannerOverlay {
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.25);
+  }
+}
