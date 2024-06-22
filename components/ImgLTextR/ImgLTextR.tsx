@@ -5,7 +5,7 @@ interface ImgLTextRProps {
   text2: string;
 }
 
-const ImgLTextR: React.FC<ImgLTextRProps> = ({ imgSrc, text1, text2 }) => {
+export const ImgLTextR: React.FC<ImgLTextRProps> = ({ imgSrc, text1, text2 }) => {
   return <>
     <section className={`textbox`}>
       <img src={imgSrc}></img>
