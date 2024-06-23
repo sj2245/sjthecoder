@@ -9,6 +9,12 @@
   justify-content: center;
   border-bottom: 1px solid #242424;
 
+  .bannerVideo {
+    max-height: 950px;
+    object-fit: cover;
+    width: 100%;
+  }
+
   .bannerOverlay {
     top: 50%;
     left: 50%;

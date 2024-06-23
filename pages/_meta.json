@@ -2,7 +2,6 @@
   "index": {
     "title": "Home",
     "type": "page",
-    "display": "hidden",
     "theme": {
       "pagination": false,
       "layout": "full"
@@ -16,17 +15,8 @@
       "layout": "full"
     }
   },
-  "profile": {
-    "title": "Profile",
-    "type": "page",
-    "display": "hidden",
-    "theme": {
-      "pagination": false,
-      "layout": "full"
-    }
-  },
-  "services": {
-    "title": "Services",
+  "portfolio": {
+    "title": "Portfolio",
     "type": "page",
     "theme": {
       "pagination": false,

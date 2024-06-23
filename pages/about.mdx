@@ -1,14 +1,25 @@
+import Banner from '../components/banner/banner'
 
-<div style={{textAlign: `center`}}>
+<Banner topText={`About`} />
+
+<div style={{textAlign: `center`, marginTop: 25}}>
   # About
 </div>
 
-<div className="textbox">
-Hello! My name is Shakespeare James II. I come from New York City. I like to play video games and do programming as well! I first began programming in late 4th grade when I discovered Scratch. I made all sorts of cool little Scratch games, until my dad picked up on my interest. He encouraged me to move to text based languages, at first beginning with Python and soon moving up to Java and C++. I also learned a decent bit of website design languages such as HTML and CSS. In the summer of my 8th and 9th grade, I worked on and created many more projects. 
+<section>
+  <div className={`bio`}>
+    <div className="textbox">
+      Hello! My name is Shakespeare James II. I live in New York City. I like to play video games and do programming as well! I first began programming in late 4th grade when I discovered Scratch. I made all sorts of cool little Scratch games, until my dad picked up on my interest. He encouraged me to move to text based languages, at first beginning with Python and soon moving up to Java and C++. I also learned a decent bit of website design languages such as HTML and CSS. In the summer of my 8th and 9th grade, I worked on and created many more projects. 
 
-I personally enjoy multiplayer video games, such as Minecraft or Roblox. I did some minor Roblox modeling for one of my friends,nothing too big but it gave me my first idea of the developer workflow.
+      I personally enjoy multiplayer video games, such as Minecraft or Roblox. I also play Call of Duty, War Thunder, Hoi4, and Helldivers. I did some minor Roblox modeling for one of my friends, nothing too big but it gave me my first idea of the developer workflow.
 
-Below is an image of me:
-</div>
+      Below is an image of me:
+    </div>
 
-<img src="C:\Users\shake\OneDrive\Desktop\Desktop files\Lessons_with_Onepiecefan\sjthecoder\images\webimg.jpeg"></img>
+    <img 
+      alt={`Giga Chad Image Of Me`}
+      className={`aboutPageImage bioPic gigachadImage`}
+      src={`/assets/images/gigachad.jpeg`} 
+    />
+  </div>
+</section>

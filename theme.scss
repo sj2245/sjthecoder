@@ -15,7 +15,18 @@ article {
   display: none;
 }
 
-.textbox{
-  padding-left: 25%;
-  padding-right: 25%;
+.textbox {
+  padding: 25px 25%;
+  @media (max-width: 900px) and (min-width: 697px) {
+    padding: 25px 50px;
+  }
+  @media (max-width: 697px) {
+    padding: 25px 25px;
+  }
+}
+
+.bioPic {
+  margin: 0 auto;
+  max-height: 500px;
+  border-radius: 100%;
 }
