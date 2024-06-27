@@ -7,8 +7,24 @@
       "layout": "full"
     }
   },
+  "blog": {
+    "title": "Blog",
+    "type": "page",
+    "theme": {
+      "pagination": false,
+      "layout": "full"
+    }
+  },
  "about": {
     "title": "About",
+    "type": "page",
+    "theme": {
+      "pagination": false,
+      "layout": "full"
+    }
+  },
+  "research": {
+    "title": "Research",
     "type": "page",
     "theme": {
       "pagination": false,
