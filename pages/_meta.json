@@ -7,14 +7,6 @@
       "layout": "full"
     }
   },
-  "blog": {
-    "title": "Blog",
-    "type": "page",
-    "theme": {
-      "pagination": false,
-      "layout": "full"
-    }
-  },
  "about": {
     "title": "About",
     "type": "page",
@@ -33,6 +25,14 @@
   },
   "portfolio": {
     "title": "Portfolio",
+    "type": "page",
+    "theme": {
+      "pagination": false,
+      "layout": "full"
+    }
+  },
+  "blog": {
+    "title": "Blog",
     "type": "page",
     "theme": {
       "pagination": false,
