@@ -14,6 +14,9 @@ const config: DocsThemeConfig = {
   editLink: {
     text: null,
   },
+  search: {
+    component: null,
+  },
   toc: {
     component: null,
   },

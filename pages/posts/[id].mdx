@@ -1,0 +1,36 @@
+import { blogPosts } from '../../server';
+
+export async function getStaticPaths() {
+  const paths = blogPosts.map(post => ({
+    params: { id: post.id.toString() },
+  }));
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }) {
+  const post = blogPosts.find(p => p.id.toString() === params.id);
+  if (!post) {
+    return {
+      notFound: true,
+    };
+  }
+  return { props: { post } };
+}
+
+<div style={{textAlign: `center`}}>
+  # Post
+</div>
+
+export default function PostPage({ post }) {
+  return <>
+    <div id={`blog-post-${post.id}`} className="blogPost">
+      <div className="blogContent project">
+        <img className="ProjImg" src={post.image} />
+        <div className="projDes">
+          <p>{post.title}</p>
+          <p>{post.text}</p>
+        </div>
+      </div>
+    </div>
+  </>
+}

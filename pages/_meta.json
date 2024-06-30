@@ -15,8 +15,24 @@
       "layout": "full"
     }
   },
+  "research": {
+    "title": "Research",
+    "type": "page",
+    "theme": {
+      "pagination": false,
+      "layout": "full"
+    }
+  },
   "portfolio": {
     "title": "Portfolio",
+    "type": "page",
+    "theme": {
+      "pagination": false,
+      "layout": "full"
+    }
+  },
+  "blog": {
+    "title": "Blog",
     "type": "page",
     "theme": {
       "pagination": false,
