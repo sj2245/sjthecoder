@@ -1,0 +1,45 @@
+.projTitle {
+  font-size: 35px;
+}
+
+.projectsContainer {
+  display: flex;
+  grid-gap: 35px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  padding: 55px 45px;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: center;
+  border: 1px solid white;
+
+  @media (max-width: 1500px) {
+    flex-direction: column;
+  }
+
+  p {
+    padding: 25px;
+    max-width: 527px;
+  }
+
+  img {
+    padding: 25px;
+    max-width: 527px;
+    max-height: 400px;
+    border-radius: 25px !important;
+
+    @media (max-width: 750px) {
+      max-width: 100%;
+    }
+  }
+}
+
+.projDes {
+  display: block;
+  @extend .textAlignJustify;
+}
