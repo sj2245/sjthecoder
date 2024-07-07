@@ -12,7 +12,14 @@ export const portfolioProjects = [
     image: `/assets/images/myproject.PNG`,
     link: `#`,
     text: `Project I made to first get into unity, contains a single level. The objective is to reach the end while minimizing how much you get hit by balls`
-  }
+  },
+  {
+    id: 3,
+    title: `TD Demo`,
+    image: `/assets/images/myproject.PNG`,
+    link: `#`,
+    text: `Tower Defense Demo Game`
+  },
 ];
 
 export const blogPosts = [

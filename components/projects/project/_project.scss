@@ -4,7 +4,7 @@
 
 .projectsContainer {
   display: flex;
-  grid-gap: 35px;
+  grid-gap: 70px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -12,11 +12,57 @@
 
 .project {
   display: flex;
+  position: relative;
   padding: 55px 45px;
   align-items: center;
   border-radius: 15px;
+  background: black;
   justify-content: center;
   border: 1px solid white;
+
+  &.gradientBorder {
+    border: none;
+    &::before {
+    content: "";
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-radius: 15px;
+      transform: scale(1.009);
+      transition: 150ms ease-in-out;
+      background: var(--rainbowGradient);
+      // animation: 5s linear infinite circulateItem;
+      // animation: 5s linear infinite circulateRainbow;
+    }
+  }
+
+  @keyframes circulateItem {
+    0% {
+      transform: scale(1.009) rotate(0deg);
+    }
+    100% {
+      transform: scale(1.009) rotate(360deg);
+    }
+  }
+
+  @keyframes circulateRainbow {
+    0% {
+      background: linear-gradient(0deg, hsl(329, 78%, 51%), hsl(20.429, 78%, 51%), hsl(71.857, 78%, 51%), hsl(123.286, 78%, 51%), hsl(174.714, 78%, 51%), hsl(226.143, 78%, 51%), hsl(277.571, 78%, 51%));
+    }
+    25% {
+      background: linear-gradient(90deg, hsl(329, 78%, 51%), hsl(20.429, 78%, 51%), hsl(71.857, 78%, 51%), hsl(123.286, 78%, 51%), hsl(174.714, 78%, 51%), hsl(226.143, 78%, 51%), hsl(277.571, 78%, 51%));
+    }
+    50% {
+      background: linear-gradient(180deg, hsl(329, 78%, 51%), hsl(20.429, 78%, 51%), hsl(71.857, 78%, 51%), hsl(123.286, 78%, 51%), hsl(174.714, 78%, 51%), hsl(226.143, 78%, 51%), hsl(277.571, 78%, 51%));
+    }
+    75% {
+      background: linear-gradient(270deg, hsl(329, 78%, 51%), hsl(20.429, 78%, 51%), hsl(71.857, 78%, 51%), hsl(123.286, 78%, 51%), hsl(174.714, 78%, 51%), hsl(226.143, 78%, 51%), hsl(277.571, 78%, 51%));
+    }
+    100% {
+      background: linear-gradient(359deg, hsl(329, 78%, 51%), hsl(20.429, 78%, 51%), hsl(71.857, 78%, 51%), hsl(123.286, 78%, 51%), hsl(174.714, 78%, 51%), hsl(226.143, 78%, 51%), hsl(277.571, 78%, 51%));
+    }
+  }
 
   @media (max-width: 1500px) {
     flex-direction: column;
