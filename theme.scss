@@ -1,4 +1,5 @@
 @import './components/banner/banner';
+@import './components/projects/project/project';
 
 .nx-mx-auto.nx-flex:not(.nextra-nav-container) {
   max-width: 100%;
@@ -45,30 +46,6 @@ article {
 
 .subtitle {
   font-size: 35px;
+  text-align: center;
   margin: 0 auto !important;
-}
-.project {
-  display: flex;
-  padding-bottom: 45px;
-  @media (max-width: 1500px) {
-    display: block;
-  }
-  p {
-    padding:25px;
-    max-width: 527px;
-  }
-  img {
-    border-radius: 25px !important;
-    padding: 25px;
-    max-width: 527px;
-    max-height: 400px;
-    @media (max-width: 750px) {
-      max-width: 100%;
-    }
-  }
-}
-
-.projDes {
-  display: block;
-  @extend .textAlignJustify;
 }
