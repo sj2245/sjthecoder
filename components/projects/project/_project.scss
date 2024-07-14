@@ -59,9 +59,11 @@
   }
 
   img {
-    padding: 25px;
-    max-width: 527px;
-    max-height: 400px;
+    &.projImg {
+      padding: 25px;
+      max-width: 527px;
+      max-height: 400px;
+    }
     border-radius: 25px !important;
 
     @media (max-width: 750px) {
