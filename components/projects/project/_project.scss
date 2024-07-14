@@ -30,37 +30,22 @@
       position: absolute;
       border-radius: 15px;
       transform: scale(1.009);
+      background: var(--rainbow);
+      background-size: 300%;
       transition: 150ms ease-in-out;
-      background: var(--rainbowGradient);
-      // animation: 5s linear infinite circulateItem;
-      // animation: 5s linear infinite circulateRainbow;
+      animation: ease infinite 5s circulateBG;
     }
   }
 
-  @keyframes circulateItem {
+  @keyframes circulateBG {
     0% {
-      transform: scale(1.009) rotate(0deg);
-    }
-    100% {
-      transform: scale(1.009) rotate(360deg);
-    }
-  }
-
-  @keyframes circulateRainbow {
-    0% {
-      background: linear-gradient(0deg, hsl(329, 78%, 51%), hsl(20.429, 78%, 51%), hsl(71.857, 78%, 51%), hsl(123.286, 78%, 51%), hsl(174.714, 78%, 51%), hsl(226.143, 78%, 51%), hsl(277.571, 78%, 51%));
-    }
-    25% {
-      background: linear-gradient(90deg, hsl(329, 78%, 51%), hsl(20.429, 78%, 51%), hsl(71.857, 78%, 51%), hsl(123.286, 78%, 51%), hsl(174.714, 78%, 51%), hsl(226.143, 78%, 51%), hsl(277.571, 78%, 51%));
+      background-position: 0% 50%;
     }
     50% {
-      background: linear-gradient(180deg, hsl(329, 78%, 51%), hsl(20.429, 78%, 51%), hsl(71.857, 78%, 51%), hsl(123.286, 78%, 51%), hsl(174.714, 78%, 51%), hsl(226.143, 78%, 51%), hsl(277.571, 78%, 51%));
-    }
-    75% {
-      background: linear-gradient(270deg, hsl(329, 78%, 51%), hsl(20.429, 78%, 51%), hsl(71.857, 78%, 51%), hsl(123.286, 78%, 51%), hsl(174.714, 78%, 51%), hsl(226.143, 78%, 51%), hsl(277.571, 78%, 51%));
+      background-position: 100% 50%;
     }
     100% {
-      background: linear-gradient(359deg, hsl(329, 78%, 51%), hsl(20.429, 78%, 51%), hsl(71.857, 78%, 51%), hsl(123.286, 78%, 51%), hsl(174.714, 78%, 51%), hsl(226.143, 78%, 51%), hsl(277.571, 78%, 51%));
+      background-position: 0% 50%;
     }
   }
 
