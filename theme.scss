@@ -53,3 +53,43 @@ article {
   text-align: center;
   margin: 0 auto !important;
 }
+
+.blogContent {
+  flex-direction: column;
+}
+
+.postText {
+  padding-top: 15px;
+  img {
+    padding: 15px 15px 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  aside, .nextra-toc {
+    width: auto !important;
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  aside {
+    ul {
+      li {
+        &:not(.nx-flex) {
+          display: none;
+        }
+      }
+    }
+  }
+  nav {
+    * {
+      &.nx-relative {
+        display: none !important;
+      }
+      &.nx-text-sm {
+        display: none !important;
+      }
+    }
+  }
+}

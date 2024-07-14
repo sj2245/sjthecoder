@@ -25,10 +25,10 @@ export default function PostPage({ post }) {
   return <>
     <div id={`blog-post-${post.id}`} className="blogPost">
       <div className="blogContent project">
-        <img className="ProjImg" src={post.image} />
+        <img alt={`Post Image`} className="ProjImg" src={post.image} />
         <div className="projDes">
-          <p>{post.title}</p>
-          <p>{post.text}</p>
+          <h3>{post.title}</h3>
+          <div className={`postText`} dangerouslySetInnerHTML={{ __html: post.text }} />
         </div>
       </div>
     </div>

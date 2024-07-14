@@ -15,7 +15,7 @@ export default function Projects() {
                   <h3 className={`projTitle`}>
                     {prj.title}
                   </h3>
-                  <img className="ProjImg" src={prj.image} />
+                  <img alt={`Project Image`} className="projImg" src={prj.image} />
                 </a>
                 <div className="projDes">
                   <p>{prj.text}</p>
