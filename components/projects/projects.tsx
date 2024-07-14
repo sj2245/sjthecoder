@@ -9,8 +9,8 @@ export default function Projects() {
         </div>
         <div className={`projectsContainer`}>
           {portfolioProjects.map((prj, prjIndex) => {
-            return <>
-              <div key={prjIndex} className="project">
+            return (
+              <div key={prjIndex} className="project gradientBorder">
                 <a href={prj.link} className="link nx-text-primary-600" target={`_blank`}>
                   <h3 className={`projTitle`}>
                     {prj.title}
@@ -21,7 +21,7 @@ export default function Projects() {
                   <p>{prj.text}</p>
                 </div>
               </div>
-            </>
+            )
           })}
         </div>
       </section>
