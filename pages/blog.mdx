@@ -1,10 +1,15 @@
-<div style={{textAlign: `center`}}>
+import Banner from '../components/banner/banner'
+
+<div style={{textAlign: `center`, display: `none`}}>
   # Blog
 </div>
 
+<Banner topText={`Blog`} />
+
 <div className="textbox">
   Currently my blog is very new, here I post articles about things I find interesting or ideas I have. These can range from video game strategy to recent developments in the AI space. I'll limit the politics as much as possible as I believe they aren't a primary concern where I'm interested.
-  <div className="blogPreview project">
+  
+  <div className="blogPreview project" style={{ marginTop: 15 }}>
     <img alt={`Project Image`} className="projImg" src="\assets\images\article1CoverIMG.PNG" />
     <div className="projDes">
       <p>Crushing it with the M6A1 and T1E1 in war thunder</p>

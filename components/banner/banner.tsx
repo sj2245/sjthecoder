@@ -1,15 +1,17 @@
 export default function Banner(props) {
-  let { topText, bottomText, background } = props;
+  let { topText, bottomText, background, video, backgroundPosition } = props;
+
   if (!topText) topText = `Hello! I'm`;
-  if (!background) background = `/assets/videos/banner_video.mp4`;
+  if (!video) video = `/assets/videos/banner_video.mp4`;
+  if (!backgroundPosition) backgroundPosition = `center`;
+  if (!background) background = `/assets/gifs/gamewaterfallpixelart.gif`;
+
   return <>
-    <section className={`banner`}>
-      <video 
-        className={`bannerVideo`} 
-        src={background} 
-        autoPlay={true} 
-        loop={true} 
-      />
+    <section className={`banner ${background ? `customBGBanner` : ``}`} 
+      style={{ 
+        background: `url(${background})`,
+        backgroundPosition: backgroundPosition,
+       }}>
       <div className={`bannerOverlay`}>
         <div className={`bannerContent`}>
           {topText}
