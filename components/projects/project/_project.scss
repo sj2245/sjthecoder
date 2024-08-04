@@ -20,35 +20,6 @@
   justify-content: center;
   border: 1px solid white;
 
-  &.gradientBorder {
-    border: none;
-    &::before {
-    content: "";
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      border-radius: 15px;
-      transform: scale(1.009);
-      background: var(--rainbow);
-      background-size: 300%;
-      transition: 150ms ease-in-out;
-      animation: ease infinite 5s circulateBG;
-    }
-  }
-
-  @keyframes circulateBG {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
   @media (max-width: 1500px) {
     flex-direction: column;
   }

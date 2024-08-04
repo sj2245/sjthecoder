@@ -1,4 +1,5 @@
 import { portfolioProjects } from "../../server";
+import Project from "./project/project";
 
 export default function Projects() {
   return <>
@@ -10,17 +11,7 @@ export default function Projects() {
         <div className={`projectsContainer`}>
           {portfolioProjects.map((prj, prjIndex) => {
             return (
-              <div key={prjIndex} className="project gradientBorder">
-                <a href={prj.link} className="link nx-text-primary-600" target={`_blank`}>
-                  <h3 className={`projTitle`}>
-                    {prj.title}
-                  </h3>
-                  <img alt={`Project Image`} className="projImg" src={prj.image} />
-                </a>
-                <div className="projDes">
-                  <p>{prj.text}</p>
-                </div>
-              </div>
+              <Project project={prj} key={prjIndex} />
             )
           })}
         </div>

@@ -4,7 +4,7 @@ export const portfolioProjects = [
   {
     id: 1,
     title: `Desert Defense: Attack on the wall`,
-    image: `/assets/images/scratchgame.PNG`,
+    image: `/assets/gifs/DesertDefenseGif.gif`,
     link: `https://scratch.mit.edu/projects/940828375/`,
     text: `A basic scratch game I made in the span of 2 weeks for a school project. The objective is to defeat the red balls before they reach your wall. They get progressively better until 100 kills, then a boss spawns.`,
   },

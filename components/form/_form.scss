@@ -1,0 +1,28 @@
+form {
+  display: flex;
+  grid-gap: 25px;
+  align-items: center;
+  justify-content: center;
+  .formField {
+    width: 100%;
+    position: relative;
+  }
+  &.flexColumn {
+    flex-direction: column;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 15px;
+    background: black;
+    border: 1px solid white;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background: black !important;
+  }
+}
