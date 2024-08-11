@@ -3,6 +3,41 @@ form {
   grid-gap: 25px;
   align-items: center;
   justify-content: center;
+  .statusField {
+    --fieldHeight: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--fieldHeight);
+    &::before {
+      background: none;
+    }
+    &.success {
+      .formStatus {
+        background: var(--successLight);
+      }
+    }
+    .formStatus {
+      width: 100%;
+      display: flex;
+      color: black;
+      text-align: center;
+      background: white;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(var(--fieldHeight) - 3px);
+      img {
+        max-height: 275px;
+        border-radius: 10%;
+      }
+      &.stacked {
+        grid-gap: 15px;
+        flex-direction: column;
+        padding: 25px 15px 15px;
+      }
+    }
+  }
   .formField {
     width: 100%;
     position: relative;
